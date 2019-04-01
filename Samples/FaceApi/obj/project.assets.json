@@ -5896,11 +5896,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\yadavm\\Source\\Repos\\SocialExps\\Samples\\FaceApi\\FaceApi.csproj",
+      "projectUniqueName": "C:\\Users\\yadavm\\Source\\Repos\\Takmil\\Samples\\FaceApi\\FaceApi.csproj",
       "projectName": "FaceApi",
-      "projectPath": "C:\\Users\\yadavm\\Source\\Repos\\SocialExps\\Samples\\FaceApi\\FaceApi.csproj",
+      "projectPath": "C:\\Users\\yadavm\\Source\\Repos\\Takmil\\Samples\\FaceApi\\FaceApi.csproj",
       "packagesPath": "C:\\Users\\yadavm\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\yadavm\\Source\\Repos\\SocialExps\\Samples\\FaceApi\\obj\\",
+      "outputPath": "C:\\Users\\yadavm\\Source\\Repos\\Takmil\\Samples\\FaceApi\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
