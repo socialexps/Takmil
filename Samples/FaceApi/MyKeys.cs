@@ -7,9 +7,9 @@ namespace FaceApi
         string faceEndpoint = "";
         public MyKeys()
         {
-            this.Subscriptionkey = "1c0e6d5149394ceaa9c24abbcbad9eab";
-            this.StorageConnectionString = "DefaultEndpointsProtocol=https;AccountName=yadavsrorageaccount01;AccountKey=PBotd4hx3Z1o3VOYDvohsAhKpypGKp8c5GwdOgge0gQZGEtlFvkbdTIVoPjhw0Dm7QUD/Gc/PwlI4DE1P9yfhg==;EndpointSuffix=core.windows.net";
-            this.FaceEndpoint = "https://eastus.api.cognitive.microsoft.com";
+            this.Subscriptionkey = "";
+            this.StorageConnectionString = "";
+            this.FaceEndpoint = "";
 
         }
         public string Subscriptionkey{
