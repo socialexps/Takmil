@@ -10,10 +10,10 @@ using Microsoft.WindowsAzure.Storage.Blob;
 
 
 namespace FaceApi
-{
+{   
     class Program
     {   
-        private const string subscriptionkey = "";
+
         // You must use the same region as you used to get your subscription
         // keys. For example, if you got your subscription keys from westus,
         // replace "westcentralus" with "westus".
@@ -22,7 +22,9 @@ namespace FaceApi
         // region. If you use a free trial subscription key, you shouldn't
         // need to change the region.
         // Specify the Azure region
-        private const string faceEndpoint = "https://eastus.api.cognitive.microsoft.com";
+
+        
+        
         // localImagePath = @"C:\Documents\LocalImage.jpg"
         private const string localImagePath = @"<LocalImage>";
        
@@ -33,12 +35,15 @@ namespace FaceApi
 
         private static int totalFaceDetected = 0;
         private static int femaleDetected = 0;
-        private static int maleDetected = 0;
-
-        static void Main(string[] args) {
+        private static int maleDetected = 0;    
         
+        static void Main(string[] args) 
+        {   
             var remoteImageUrl = storagefunc();
             Console.WriteLine("Welcome to Face API at work ....!");
+            MyKeys mykey = new MyKeys();
+            string subscriptionkey = mykey.Subscriptionkey;
+            string faceEndpoint = mykey.FaceEndpoint;
             FaceClient faceClient = new FaceClient (
                 new ApiKeyServiceClientCredentials(subscriptionkey),
                 new System.Net.Http.DelegatingHandler[] { });
@@ -107,7 +112,10 @@ namespace FaceApi
             // in an environment variable on the machine running the application called storageconnectionstring.
             // If the environment variable is created after the application is launched in a console or with Visual
             // Studio, the shell or application needs to be closed and reloaded to take the environment variable into account.
+            
             string storageConnectionString = "";
+            MyKeys mykey = new MyKeys();
+            storageConnectionString = mykey.StorageConnectionString;
             string primaryUri = "";
             // Check whether the connection string can be parsed.
             CloudStorageAccount storageAccount;
