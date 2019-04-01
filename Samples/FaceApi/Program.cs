@@ -13,7 +13,7 @@ namespace FaceApi
 {
     class Program
     {   
-        private const string subscriptionkey = "1c0e6d5149394ceaa9c24abbcbad9eab";
+        private const string subscriptionkey = "";
         // You must use the same region as you used to get your subscription
         // keys. For example, if you got your subscription keys from westus,
         // replace "westcentralus" with "westus".
@@ -25,8 +25,6 @@ namespace FaceApi
         private const string faceEndpoint = "https://eastus.api.cognitive.microsoft.com";
         // localImagePath = @"C:\Documents\LocalImage.jpg"
         private const string localImagePath = @"<LocalImage>";
-
-        //private const string remoteImageUrl ="https://yadavsrorageaccount01.blob.core.windows.net/takmil/takmildemo.jpg";
        
         //"https://takmil.org/wp-content/uploads/2018/03/img-20180203-wa0004.jpg";
         //"https://upload.wikimedia.org/wikipedia/commons/3/37/Dagestani_man_and_woman.jpg";
@@ -109,7 +107,7 @@ namespace FaceApi
             // in an environment variable on the machine running the application called storageconnectionstring.
             // If the environment variable is created after the application is launched in a console or with Visual
             // Studio, the shell or application needs to be closed and reloaded to take the environment variable into account.
-            string storageConnectionString = "DefaultEndpointsProtocol=https;AccountName=yadavsrorageaccount01;AccountKey=PBotd4hx3Z1o3VOYDvohsAhKpypGKp8c5GwdOgge0gQZGEtlFvkbdTIVoPjhw0Dm7QUD/Gc/PwlI4DE1P9yfhg==;EndpointSuffix=core.windows.net";
+            string storageConnectionString = "";
             string primaryUri = "";
             // Check whether the connection string can be parsed.
             CloudStorageAccount storageAccount;
@@ -117,7 +115,7 @@ namespace FaceApi
             {
                 // If the connection string is valid, proceed with operations against Blob storage here.
                 // List the blobs in the container.
-                //CloudStorageAccount account = CloudStorageAccount.Parse("PBotd4hx3Z1o3VOYDvohsAhKpypGKp8c5GwdOgge0gQZGEtlFvkbdTIVoPjhw0Dm7QUD/Gc/PwlI4DE1P9yfhg==");
+              
                 CloudBlobClient blobClient = storageAccount.CreateCloudBlobClient();
                 CloudBlobContainer container = blobClient.GetContainerReference("takmil");
                 CloudBlob blob = container.GetBlobReference("takmildemo.jpg");
